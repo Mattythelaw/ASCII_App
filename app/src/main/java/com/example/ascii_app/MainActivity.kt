@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             //Adding the stars to the current row//
             while (stars <= row) {
                 //Adding one star//
-                art += ""
+                art += "*"
                 //Moving to next star//
                 stars++
             }
