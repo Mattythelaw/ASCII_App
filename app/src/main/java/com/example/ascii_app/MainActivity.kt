@@ -19,12 +19,19 @@ class MainActivity : AppCompatActivity() {
         val displayTxt= findViewById<TextView>(R.id.displayTxt)
 
         //Variable to hold the art string//
-        val art = ""
+        var art = ""
 
         //Counter to track the current row//
         var row = 1
 
-        //
+        //While loop for building each row of stars//
+        while (row <= 8) {
+            
+        }
+
+
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
