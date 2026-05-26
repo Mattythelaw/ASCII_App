@@ -1,9 +1,7 @@
 package com.example.ascii_app
 
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Linking the TextView to display the art//
-        val displayTxt= findViewById<TextView>(R.id.displayTxt)
+        val txtArt = findViewById<TextView>(R.id.txtArt)
 
         //Variable to hold the art string//
         var art = ""
@@ -37,7 +35,14 @@ class MainActivity : AppCompatActivity() {
                 //Moving to next star//
                 stars++
             }
+            //Used to move to next line after each row//
+            art += "\n"
+            //move to next row//
+            row++
         }
+        //Display the final art//
+        txtArt.text = art
+
 
 
 
