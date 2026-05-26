@@ -26,7 +26,17 @@ class MainActivity : AppCompatActivity() {
 
         //While loop for building each row of stars//
         while (row <= 8) {
-            
+
+            //Inner counter to track stars in current row//
+            var stars = 1
+
+            //Adding the stars to the current row//
+            while (stars <= row) {
+                //Adding one star//
+                art += ""
+                //Moving to next star//
+                stars++
+            }
         }
 
 
